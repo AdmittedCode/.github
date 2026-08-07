@@ -1,0 +1,59 @@
+name: Site Admission Watch
+
+on:
+  pull_request:
+    paths:
+      - 'scripts/check_site_admission.py'
+      - 'data/site-admission-watch.json'
+      - 'data/tasks/ADMITTEDCODE-SITE-REVIEW-INTEGRATION.json'
+      - '.github/workflows/site-admission-watch.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/check_site_admission.py'
+      - 'data/site-admission-watch.json'
+      - 'data/tasks/ADMITTEDCODE-SITE-REVIEW-INTEGRATION.json'
+      - '.github/workflows/site-admission-watch.yml'
+  schedule:
+    - cron: '17 */6 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: admittedcode-site-admission-watch
+  cancel-in-progress: false
+
+jobs:
+  observe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Observe Site admission state
+        run: python scripts/check_site_admission.py
+      - name: Validate observer output
+        run: |
+          python - <<'PY'
+          import json
+          p = json.load(open('data/site-admission-watch.json'))
+          assert p['status'] in {'BLOCKED','READY_FOR_SITE_ADMISSION','CLAIMED_FOR_INTEGRATION','RETRY'}
+          assert p['authority_effect'] == 'NONE'
+          assert p['activation_effect'] == 'NONE'
+          print(p['status'])
+          PY
+      - name: Persist changed observation on scheduled/manual/main runs
+        if: github.event_name != 'pull_request'
+        run: |
+          if git diff --quiet -- data/site-admission-watch.json; then
+            echo 'No admission-state change.'
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/site-admission-watch.json
+          git commit -m 'chore: update Site admission observation [skip ci]'
+          git push
