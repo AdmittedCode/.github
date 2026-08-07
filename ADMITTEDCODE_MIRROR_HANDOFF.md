@@ -125,10 +125,43 @@ A review is not complete merely because analysis exists. Completion requires dir
 - `StegVerse-org/LLM-adapter/docs/ADMITTEDCODE_EVIDENCE_DEMO_MIRROR_HANDOFF.md` — canonical source packet production.
 - `StegVerse-org/StegVerse-SDK/docs/ADMITTEDCODE_PORTABLE_CONSUMER_MIRROR_HANDOFF.md` — non-authorizing portable receipt consumption.
 
-## Current Next Task
-The portable reviewer-package goal is COMPLETE. The next integration goal is `StegVerse-Labs/Site`, but Site work must begin by reading its current `SITE_MIRROR_HANDOFF.md`, `data/site-orchestration-state.json`, and `data/ecosystem-heartbeat-state.json`, then honoring the Site handoff orchestrator and heartbeat contract before any Site branch or file is claimed.
+## Site Integration Admission Check — 2026-08-07
+The next integration goal was started by reading the current Site handoff and both required orchestration-state files before claiming any Site path.
 
-If Site orchestration does not admit the AdmittedCode integration workload, retain that blocker here and do not bypass it. When admitted, install the smallest non-authorizing Site projection of portable AdmittedCode review evidence and verify it through the Site's canonical validation path.
+Observed Site state:
+
+```text
+Site handoff: current work task sequence 0001 remains RUNNING / OBSERVED_BLOCKED
+machine_observation.active_task_count = 6
+machine_observation.blocker_count = 6
+machine_admission.admitted_tasks = []
+machine_admission.external_tasks_allowed = false
+machine_admission.external_session_ownership_allowed = false
+heartbeat work_state = RUNNING
+heartbeat system_health = ACTIVE_WITH_DECLARED_BLOCKER
+active HIL upload owner = external-active-session
+queued exclusive SITE-0002-HIL-LIVE remains blocked
+```
+
+Therefore the AdmittedCode Site projection is **NOT ADMITTED** at this time. No Site branch or file was claimed. This is a deliberate fail-closed result, not lack of progress.
+
+The handoff requires local execution of `scripts/site_handoff_orchestrator.py` and `scripts/check_ecosystem_heartbeat_orchestration.py`. A read-only local clone/execution attempt from this session could not run because the container has no external DNS/network access to GitHub. The committed Site state itself already explicitly denies external task admission; that denial is preserved here rather than bypassed.
+
+Publisher was also inspected. Its current handoff remains bound to Site activation and explicitly says Publisher's current blocker is that Site has not published `ACTIVATION_COMPLETE` with a hash-bound `READY_FOR_DOWNSTREAM_INGESTION` packet. No premature Publisher publication/release integration was installed.
+
+## Current Next Task
+Portable reviewer-package goal: COMPLETE.
+
+Current ecosystem integration status:
+
+```text
+StegVerse-Labs/Site integration: WAITING_FOR_SITE_MACHINE_ADMISSION
+GCAT-BCAT-Engine/Publisher projection: WAITING_FOR_SITE_ACTIVATION_CHAIN
+admissibility-wiki propagation: DOWNSTREAM_OF_PUBLISHER
+stegguardian-wiki propagation: DOWNSTREAM_OF_PUBLISHER
+```
+
+When Site state changes to admit external/parallel-safe work or otherwise explicitly admits an AdmittedCode task, install the smallest non-authorizing Site projection of the portable review evidence and bind it into Site's canonical validation path. Until then, do not bypass Site orchestration.
 
 ## Release Propagation Rule
 When an AdmittedCode repository reaches tagging/release readiness, verify that pertinent semantics, receipts, status, or integration guidance are reflected where applicable in:
@@ -139,4 +172,4 @@ When an AdmittedCode repository reaches tagging/release readiness, verify that p
 - `StegVerse-002/stegguardian-wiki`
 
 ## Status
-Portable cross-repository proof and compact reviewer package: COMPLETE and merged with hosted validation evidence. StegVerse-wide integration remains active; next admitted destination is Site subject to Site orchestration.
+Portable cross-repository proof and compact reviewer package: COMPLETE, merged, and validated. StegVerse-wide integration remains active but is currently blocked at the canonical Site admission boundary; no downstream authority boundary was bypassed.
