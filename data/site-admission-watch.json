@@ -1,0 +1,27 @@
+{
+  "activation_effect": "NONE",
+  "authority_effect": "NONE",
+  "next_executable_action": "Wait for Site machine admission to name this task or permit external task/session ownership; do not create a competing Site branch.",
+  "owner_repository": "AdmittedCode/.github",
+  "publication_effect": "NONE",
+  "release_condition": {
+    "condition": "ADMITTEDCODE-SITE-REVIEW-INTEGRATION appears in Site machine_admission.admitted_tasks OR both external_tasks_allowed and external_session_ownership_allowed become true",
+    "machine_observable": true
+  },
+  "release_effect": "NONE",
+  "schema_version": "1.0.0",
+  "source": {
+    "admitted_task_ids": [],
+    "external_session_ownership_allowed": false,
+    "external_tasks_allowed": false,
+    "site_active_sequence_state": "OBSERVED_BLOCKED",
+    "site_heartbeat_blob_sha": "da2d8b28b8ea5f5cce8286b93a043b852b63e900",
+    "site_heartbeat_path": "data/ecosystem-heartbeat-state.json",
+    "site_orchestration_blob_sha": "ee09b741d9149a9ab0b01cb46f00441252c39c1a",
+    "site_orchestration_path": "data/site-orchestration-state.json",
+    "site_work_state": "RUNNING"
+  },
+  "status": "BLOCKED",
+  "target_repository": "StegVerse-Labs/Site",
+  "task_id": "ADMITTEDCODE-SITE-REVIEW-INTEGRATION"
+}
