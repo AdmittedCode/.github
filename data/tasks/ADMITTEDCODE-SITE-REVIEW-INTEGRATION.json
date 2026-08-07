@@ -1,0 +1,44 @@
+{
+  "schema_version": "1.0.0",
+  "task_id": "ADMITTEDCODE-SITE-REVIEW-INTEGRATION",
+  "originating_goal": "Make AdmittedCode portable and demonstrate its evidence value through the StegVerse ecosystem, then propagate the same portable evidence contract into StegVerse review surfaces.",
+  "owner_repository": "AdmittedCode/.github",
+  "target_repository": "StegVerse-Labs/Site",
+  "canonical_handoff": "ADMITTEDCODE_MIRROR_HANDOFF.md",
+  "target_handoff": "StegVerse-Labs/Site:docs/SITE_MIRROR_HANDOFF.md",
+  "claim_state": "BLOCKED",
+  "role": "INTEGRATION",
+  "claim_created_at": "2026-08-07T09:15:00-05:00",
+  "claim_expiration": "Re-evaluate automatically every six hours; no target-repository file claim exists until Site machine admission explicitly permits it.",
+  "collision_boundaries": [
+    "Do not create a Site branch while Site machine_admission.external_tasks_allowed is false.",
+    "Do not claim paths owned by SITE-0001-UPLOAD or another active Site task.",
+    "Do not infer admission from heartbeat activity, CI success, or this observer alone."
+  ],
+  "current_evidence": {
+    "site_active_sequence_state": "OBSERVED_BLOCKED",
+    "site_machine_admitted_tasks": [],
+    "site_external_tasks_allowed": false,
+    "site_external_session_ownership_allowed": false,
+    "site_heartbeat_work_state": "RUNNING"
+  },
+  "machine_owner": {
+    "repository": "AdmittedCode/.github",
+    "workflow": ".github/workflows/site-admission-watch.yml",
+    "observer": "scripts/check_site_admission.py",
+    "state_output": "data/site-admission-watch.json"
+  },
+  "release_condition": "Site machine_admission names ADMITTEDCODE-SITE-REVIEW-INTEGRATION in admitted_tasks, or both external_tasks_allowed and external_session_ownership_allowed become true.",
+  "next_executable_action_after_release": "Read fresh Site handoff/orchestration/heartbeat state, create or use the exact Site-admitted task claim, and install the smallest non-authorizing projection of portable AdmittedCode review evidence through Site's canonical validation path.",
+  "expected_evidence": [
+    "Site task/admission record",
+    "Site branch/commit or machine-owned mutation",
+    "canonical Site validation PASS",
+    "non-authorizing review-evidence projection",
+    "downstream Publisher and wiki propagation only after Site contract permits it"
+  ],
+  "authority_effect": "NONE",
+  "activation_effect": "NONE",
+  "publication_effect": "NONE",
+  "release_effect": "NONE"
+}
