@@ -48,7 +48,7 @@ jobs:
       - name: Persist changed observation on scheduled/manual/main runs
         if: github.event_name != 'pull_request'
         run: |
-          if git diff --quiet -- data/site-admission-watch.json; then
+          if [ -z "$(git status --porcelain -- data/site-admission-watch.json)" ]; then
             echo 'No admission-state change.'
             exit 0
           fi
