@@ -17,7 +17,7 @@
     "site_active_sequence_state": "OBSERVED_BLOCKED",
     "site_heartbeat_blob_sha": "da2d8b28b8ea5f5cce8286b93a043b852b63e900",
     "site_heartbeat_path": "data/ecosystem-heartbeat-state.json",
-    "site_orchestration_blob_sha": "ee09b741d9149a9ab0b01cb46f00441252c39c1a",
+    "site_orchestration_blob_sha": "89680b2d2fa20e0b5b4a0ecb5a120af9f3c31684",
     "site_orchestration_path": "data/site-orchestration-state.json",
     "site_work_state": "RUNNING"
   },
