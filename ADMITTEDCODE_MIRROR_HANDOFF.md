@@ -14,7 +14,7 @@ Make AdmittedCode portable, independently verifiable, and reusable throughout St
 5. `fleet-status` — continuous public status surface for the review tools.
 
 ## Implemented Portable StegVerse Seam
-The first cross-repository portable seam is now installed:
+The first cross-repository portable seam is installed and merged:
 
 ```text
 StegVerse-org/LLM-adapter
@@ -32,17 +32,35 @@ StegVerse-org/StegVerse-SDK
   -> ACCEPTED for non-authorizing SDK consumption
 ```
 
-Merged evidence currently includes:
+Merged evidence:
 
 - `StegVerse-org/LLM-adapter` PR #121 — initial portable packet fixtures.
-- `StegVerse-org/LLM-adapter` PR #122 — deterministic binding to canonical `simple_query.json` and `action_commit_candidate.json`; merged commit `12eefc095479b325ccb5551c7279b7ecec1d0283`.
+- `StegVerse-org/LLM-adapter` PR #122 — deterministic canonical-fixture binding; merged commit `12eefc095479b325ccb5551c7279b7ecec1d0283`; PR validation PASS.
 - `AdmittedCode/provider-harness` PR #1 — initial portable StegVerse review demo.
-- `AdmittedCode/provider-harness` PR #2 — canonical source-snapshot verification before review; merged commit `c4eb15c63f4d0869080f59a57207449a8bf629e7`.
+- `AdmittedCode/provider-harness` PR #2 — canonical source-snapshot verification before review; merged commit `c4eb15c63f4d0869080f59a57207449a8bf629e7`; Self Test PASS.
 - `StegVerse-org/StegVerse-SDK` PR #11 — portable non-authorizing receipt consumer; merged.
-- `StegVerse-org/StegVerse-SDK` PR #12 — source-verified ALLOW and DENY receipt fixtures; validation in progress at handoff update time.
+- `StegVerse-org/StegVerse-SDK` PR #12 — source-verified ALLOW and DENY receipt fixtures; merged commit `6227454a78b9c210a8ec0d3eb5be3f15b977c6e7`; all five SDK validation workflows PASS.
+- `AdmittedCode/provider-harness` PR #3 — compact external reviewer packet; merged commit `b5b942d64cb7d7278b7a4137704fea75f325a77f`; Self Test PASS.
+
+## External Reviewer Packet
+Canonical path:
+
+```text
+AdmittedCode/provider-harness/demo/reviewer_packet/
+```
+
+Installed reviewer surfaces:
+
+- `README_FIRST.md`
+- `cross_repo_manifest.json`
+- `run_reviewer_demo.py`
+- `REVIEWER_PACKET_MIRROR_HANDOFF.md`
+- `tests/test_reviewer_packet.py`
+
+The packet binds exact merged implementations in LLM-adapter, provider-harness, and SDK. One command demonstrates source verification, ALLOW, correct DENY, `key_requested=false`, independent base receipt-hash verification, and `authority_effect=NONE`.
 
 ## Semantic Separation Proven
-The first refusal path intentionally preserves three different meanings:
+The refusal path preserves three different meanings:
 
 ```text
 StegVerse canonical source expected_outcome = QUARANTINE
@@ -67,7 +85,7 @@ For a StegVerse repository or governed transition under review:
 - `ALLOW`, `DENY`, `FAIL_CLOSED`, `QUARANTINE`, `PARTIAL`, and downstream `ACCEPTED` statuses MUST not be collapsed into one generic success/failure bit.
 
 ## Initial Cross-Ecosystem Review Targets
-Priority order after the portable seam is complete:
+Priority order after the portable seam:
 
 1. `StegVerse-Labs/Site` — activation and public proof projection, subject to its own orchestration handoff.
 2. `GCAT-BCAT-Engine/Publisher` — publication and governed release path.
@@ -103,13 +121,14 @@ A review is not complete merely because analysis exists. Completion requires dir
 ## Adjacent Handoffs
 - `AdmittedCode/provider-harness/PROVIDER_HARNESS_MIRROR_HANDOFF.md` — provider-harness implementation.
 - `AdmittedCode/provider-harness/demo/stegverse/PORTABLE_STEGVERSE_DEMO_MIRROR_HANDOFF.md` — portable StegVerse demonstration.
+- `AdmittedCode/provider-harness/demo/reviewer_packet/REVIEWER_PACKET_MIRROR_HANDOFF.md` — compact external-review package.
 - `StegVerse-org/LLM-adapter/docs/ADMITTEDCODE_EVIDENCE_DEMO_MIRROR_HANDOFF.md` — canonical source packet production.
 - `StegVerse-org/StegVerse-SDK/docs/ADMITTEDCODE_PORTABLE_CONSUMER_MIRROR_HANDOFF.md` — non-authorizing portable receipt consumption.
 
 ## Current Next Task
-Finish and merge SDK PR #12, then create a compact reviewer package in `AdmittedCode/provider-harness` that binds the exact merged LLM-adapter, AdmittedCode, and SDK commits and gives an external reviewer one short path through source fixture -> packet -> source verification -> ALLOW/DENY -> receipt -> independent SDK verification.
+The portable reviewer-package goal is COMPLETE. The next integration goal is `StegVerse-Labs/Site`, but Site work must begin by reading its current `SITE_MIRROR_HANDOFF.md`, `data/site-orchestration-state.json`, and `data/ecosystem-heartbeat-state.json`, then honoring the Site handoff orchestrator and heartbeat contract before any Site branch or file is claimed.
 
-After that portable reviewer package is validated, integrate the same evidence contract into `StegVerse-Labs/Site` only through Site's current orchestration/admission path, then propagate release-facing semantics to Publisher and the two governance wikis.
+If Site orchestration does not admit the AdmittedCode integration workload, retain that blocker here and do not bypass it. When admitted, install the smallest non-authorizing Site projection of portable AdmittedCode review evidence and verify it through the Site's canonical validation path.
 
 ## Release Propagation Rule
 When an AdmittedCode repository reaches tagging/release readiness, verify that pertinent semantics, receipts, status, or integration guidance are reflected where applicable in:
@@ -120,4 +139,4 @@ When an AdmittedCode repository reaches tagging/release readiness, verify that p
 - `StegVerse-002/stegguardian-wiki`
 
 ## Status
-Portable cross-repository proof: IMPLEMENTED through canonical packet generation, independent source verification, provider-harness ALLOW/DENY, portable receipt generation, and SDK hash verification. Final reviewer packaging and downstream Site integration remain active.
+Portable cross-repository proof and compact reviewer package: COMPLETE and merged with hosted validation evidence. StegVerse-wide integration remains active; next admitted destination is Site subject to Site orchestration.
