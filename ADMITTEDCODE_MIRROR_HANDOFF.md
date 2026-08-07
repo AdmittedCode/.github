@@ -122,46 +122,36 @@ A review is not complete merely because analysis exists. Completion requires dir
 - `AdmittedCode/provider-harness/PROVIDER_HARNESS_MIRROR_HANDOFF.md` — provider-harness implementation.
 - `AdmittedCode/provider-harness/demo/stegverse/PORTABLE_STEGVERSE_DEMO_MIRROR_HANDOFF.md` — portable StegVerse demonstration.
 - `AdmittedCode/provider-harness/demo/reviewer_packet/REVIEWER_PACKET_MIRROR_HANDOFF.md` — compact external-review package.
-- `StegVerse-org/LLM-adapter/docs/ADMITTEDCODE_EVIDENCE_DEMO_MIRROR_HANDOFF.md` — canonical source packet production.
-- `StegVerse-org/StegVerse-SDK/docs/ADMITTEDCODE_PORTABLE_CONSUMER_MIRROR_HANDOFF.md` — non-authorizing portable receipt consumption.
+- `StegVerse-org/LLM-adapter/docs/ADMITTEDCODE_EVIDENCE_DEMO_MIRROR_HANDOFF.md` — canonical source packet production; completed and merged.
+- `StegVerse-org/StegVerse-SDK/docs/ADMITTEDCODE_PORTABLE_CONSUMER_MIRROR_HANDOFF.md` — non-authorizing portable receipt consumption; completed and merged.
 
-## Site Integration Admission Check — 2026-08-07
-The next integration goal was started by reading the current Site handoff and both required orchestration-state files before claiming any Site path.
+## Machine-owned Site Integration Continuation
 
-Observed Site state:
+The portable reviewer-package goal is COMPLETE. The next integration goal is `StegVerse-Labs/Site`, but Site currently denies external task and external session ownership. No Site branch or path is claimed by this workstream.
 
-```text
-Site handoff: current work task sequence 0001 remains RUNNING / OBSERVED_BLOCKED
-machine_observation.active_task_count = 6
-machine_observation.blocker_count = 6
-machine_admission.admitted_tasks = []
-machine_admission.external_tasks_allowed = false
-machine_admission.external_session_ownership_allowed = false
-heartbeat work_state = RUNNING
-heartbeat system_health = ACTIVE_WITH_DECLARED_BLOCKER
-active HIL upload owner = external-active-session
-queued exclusive SITE-0002-HIL-LIVE remains blocked
-```
+Durable blocked task:
 
-Therefore the AdmittedCode Site projection is **NOT ADMITTED** at this time. No Site branch or file was claimed. This is a deliberate fail-closed result, not lack of progress.
+`data/tasks/ADMITTEDCODE-SITE-REVIEW-INTEGRATION.json`
 
-The handoff requires local execution of `scripts/site_handoff_orchestrator.py` and `scripts/check_ecosystem_heartbeat_orchestration.py`. A read-only local clone/execution attempt from this session could not run because the container has no external DNS/network access to GitHub. The committed Site state itself already explicitly denies external task admission; that denial is preserved here rather than bypassed.
+Machine observer:
 
-Publisher was also inspected. Its current handoff remains bound to Site activation and explicitly says Publisher's current blocker is that Site has not published `ACTIVATION_COMPLETE` with a hash-bound `READY_FOR_DOWNSTREAM_INGESTION` packet. No premature Publisher publication/release integration was installed.
+- workflow: `.github/workflows/site-admission-watch.yml`
+- script: `scripts/check_site_admission.py`
+- persisted state: `data/site-admission-watch.json` when the scheduled/main workflow observes a state change.
 
-## Current Next Task
-Portable reviewer-package goal: COMPLETE.
+Observer PR #1 merged as `0d30496950ea89a7e483d6ab67efa4bd05b45997`. PR workflow run `31186953791`, job `92893798545`, completed PASS and directly observed Site status `BLOCKED` from live Site orchestration/heartbeat files.
 
-Current ecosystem integration status:
+Release condition is machine-observable: `ADMITTEDCODE-SITE-REVIEW-INTEGRATION` appears in Site `machine_admission.admitted_tasks`, or both `external_tasks_allowed` and `external_session_ownership_allowed` become true. Until then, do not create a competing Site branch.
 
-```text
-StegVerse-Labs/Site integration: WAITING_FOR_SITE_MACHINE_ADMISSION
-GCAT-BCAT-Engine/Publisher projection: WAITING_FOR_SITE_ACTIVATION_CHAIN
-admissibility-wiki propagation: DOWNSTREAM_OF_PUBLISHER
-stegguardian-wiki propagation: DOWNSTREAM_OF_PUBLISHER
-```
+## Session Consolidation
 
-When Site state changes to admit external/parallel-safe work or otherwise explicitly admits an AdmittedCode task, install the smallest non-authorizing Site projection of the portable review evidence and bind it into Site's canonical validation path. Until then, do not bypass Site orchestration.
+Complete durable execution inventory:
+
+`SESSION_CONSOLIDATION_ADMITTEDCODE_PORTABILITY_2026-08-07.md`
+
+The originating ChatGPT session's unique requirements are transferred there and into the task/observer above. The session does not own the repository's separate API/browser product-interface milestones in `provider-harness`; those remain independent repository work unless another durable claim assigns them.
+
+Publisher and downstream wiki propagation are MERGED INTO their existing canonical Site -> Publisher -> wiki workstream rather than duplicated here. `GCAT-BCAT-Engine/Publisher/PUBLISHER_MIRROR_HANDOFF.md` remains authoritative for that projection chain.
 
 ## Release Propagation Rule
 When an AdmittedCode repository reaches tagging/release readiness, verify that pertinent semantics, receipts, status, or integration guidance are reflected where applicable in:
@@ -170,6 +160,11 @@ When an AdmittedCode repository reaches tagging/release readiness, verify that p
 - `GCAT-BCAT-Engine/Publisher`
 - `StegVerse-Labs/admissibility-wiki`
 - `StegVerse-002/stegguardian-wiki`
+- `master-records/orchestration` when custody/reconstruction is authorized.
+
+## Current Next Task
+
+No ChatGPT session owns the blocked Site mutation. The next executable action is machine-owned observation through `.github/workflows/site-admission-watch.yml`. When Site releases the admission condition, a future execution lane must first reread Site's current handoff/orchestration/heartbeat state and use the exact Site-admitted claim before mutating any Site path.
 
 ## Status
-Portable cross-repository proof and compact reviewer package: COMPLETE, merged, and validated. StegVerse-wide integration remains active but is currently blocked at the canonical Site admission boundary; no downstream authority boundary was bypassed.
+Portable cross-repository proof and compact reviewer package: COMPLETE, merged, and hosted-validated. Session-specific implementation/consolidation: COMPLETE. StegVerse-wide integration remains active as machine-owned blocked work with a durable owner, release condition, collision boundary, and next action.
