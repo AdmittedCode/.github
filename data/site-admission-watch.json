@@ -15,7 +15,7 @@
     "external_session_ownership_allowed": false,
     "external_tasks_allowed": false,
     "site_active_sequence_state": "OBSERVED_BLOCKED",
-    "site_heartbeat_blob_sha": "da2d8b28b8ea5f5cce8286b93a043b852b63e900",
+    "site_heartbeat_blob_sha": "b98deb4df19ed0a5194bf18c58a11875feb0c886",
     "site_heartbeat_path": "data/ecosystem-heartbeat-state.json",
     "site_orchestration_blob_sha": "6f5dc028573c556ddcbbd9a82adb636cfdd5d2e6",
     "site_orchestration_path": "data/site-orchestration-state.json",
