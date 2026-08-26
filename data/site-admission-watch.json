@@ -1,27 +1,11 @@
 {
   "activation_effect": "NONE",
   "authority_effect": "NONE",
-  "next_executable_action": "Wait for Site machine admission to name this task or permit external task/session ownership; do not create a competing Site branch.",
+  "error": "HTTPError: HTTP Error 403: rate limit exceeded",
+  "next_executable_action": "Retry observation; do not infer Site admission while source state is unavailable.",
   "owner_repository": "AdmittedCode/.github",
-  "publication_effect": "NONE",
-  "release_condition": {
-    "condition": "ADMITTEDCODE-SITE-REVIEW-INTEGRATION appears in Site machine_admission.admitted_tasks OR both external_tasks_allowed and external_session_ownership_allowed become true",
-    "machine_observable": true
-  },
-  "release_effect": "NONE",
   "schema_version": "1.0.0",
-  "source": {
-    "admitted_task_ids": [],
-    "external_session_ownership_allowed": false,
-    "external_tasks_allowed": false,
-    "site_active_sequence_state": "OBSERVED_BLOCKED",
-    "site_heartbeat_blob_sha": "b98deb4df19ed0a5194bf18c58a11875feb0c886",
-    "site_heartbeat_path": "data/ecosystem-heartbeat-state.json",
-    "site_orchestration_blob_sha": "6f5dc028573c556ddcbbd9a82adb636cfdd5d2e6",
-    "site_orchestration_path": "data/site-orchestration-state.json",
-    "site_work_state": "RUNNING"
-  },
-  "status": "BLOCKED",
+  "status": "RETRY",
   "target_repository": "StegVerse-Labs/Site",
   "task_id": "ADMITTEDCODE-SITE-REVIEW-INTEGRATION"
 }
