@@ -33,3 +33,14 @@ Site observation is not Site mutation authority. Admission watch state is not pu
 Preserve data/site-admission-watch.json as canonical workload evidence. COSV adoption may project that record read-only, but may not satisfy or bypass the Site admission condition.
 
 No manual user action is required.
+
+## COSV adoption
+
+```text
+task: ADMITTEDCODE-SITE-REVIEW-INTEGRATION
+task.v1: 60000000101000
+repository task surface audited: true
+repository VECTOR_PRESENT claimed: false
+```
+
+The projection is read-only and does not satisfy the Site admission condition. Repository-level VECTOR_PRESENT remains false until the merged projection is validated and a central adoption authority explicitly promotes it.
