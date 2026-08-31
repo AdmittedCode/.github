@@ -1,0 +1,33 @@
+{
+  "schema_version": "admittedcode.endpoint-profile.v1",
+  "profile_id": "admittedcode.review-services",
+  "boundary": "AdmittedCode/.github",
+  "accepts": [
+    "stegverse.admittedcode.review_packet.v1",
+    "governed.repository.review.request",
+    "governed.action.review.request"
+  ],
+  "produces": [
+    "stegverse.admittedcode.review_receipt.v1",
+    "governed.repository.review.result",
+    "governed.action.review.result"
+  ],
+  "required_context": [
+    "packet_id",
+    "origin",
+    "destination",
+    "intr_profile",
+    "transition.reference",
+    "transition.authority_effect"
+  ],
+  "receipt_obligations": [
+    "DISPATCHED",
+    "CONSUMED",
+    "REVIEW_DECISION_BOUND"
+  ],
+  "semantic_guards": [
+    "ALLOW, DENY, FAIL_CLOSED, QUARANTINE, PARTIAL, and ACCEPTED remain distinct.",
+    "Downstream ACCEPTED never converts an upstream DENY into ALLOW.",
+    "Carrier presence and boundary routing never grant execution authority."
+  ]
+}
