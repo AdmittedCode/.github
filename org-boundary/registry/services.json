@@ -1,0 +1,33 @@
+{
+  "schema_version": "admittedcode.service-registry.v1",
+  "organization": "AdmittedCode",
+  "services": [
+    {
+      "service_id": "admittedcode.code-admit-gate",
+      "repository": "AdmittedCode/code-admit-gate",
+      "role": "INTERNAL_REVIEW_ENDPOINT"
+    },
+    {
+      "service_id": "admittedcode.coherency-scanner",
+      "repository": "AdmittedCode/coherency-scanner",
+      "role": "INTERNAL_REVIEW_ENDPOINT"
+    },
+    {
+      "service_id": "admittedcode.admissibility-receipt",
+      "repository": "AdmittedCode/admissibility-receipt",
+      "role": "INTERNAL_REVIEW_ENDPOINT"
+    },
+    {
+      "service_id": "admittedcode.provider-harness",
+      "repository": "AdmittedCode/provider-harness",
+      "role": "INTERNAL_REVIEW_ENDPOINT"
+    },
+    {
+      "service_id": "admittedcode.fleet-status",
+      "repository": "AdmittedCode/fleet-status",
+      "role": "INTERNAL_STATUS_ENDPOINT"
+    }
+  ],
+  "review_authority": "NONE",
+  "notes": "Review outputs remain evidence and governance inputs. Organization routing does not grant downstream execution authority."
+}
