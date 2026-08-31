@@ -3,6 +3,13 @@
   "organization": "AdmittedCode",
   "services": [
     {
+      "service_id": "admittedcode.boundary-diagnostic",
+      "repository": "AdmittedCode/.github",
+      "boundary_role": "BOUNDARY_LOCAL_DIAGNOSTIC",
+      "profile_status": "ACTIVE",
+      "runtime_required_for_consumption": false
+    },
+    {
       "service_id": "admittedcode.code-admit-gate",
       "repository": "AdmittedCode/code-admit-gate",
       "role": "INTERNAL_REVIEW_ENDPOINT"
