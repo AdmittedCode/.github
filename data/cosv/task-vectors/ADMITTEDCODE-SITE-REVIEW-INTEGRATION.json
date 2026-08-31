@@ -1,0 +1,41 @@
+{
+  "identity": "AdmittedCode/.github:task:ADMITTEDCODE-SITE-REVIEW-INTEGRATION",
+  "profile": "task.v1",
+  "level": "task",
+  "vector": "60000000101000",
+  "evidence_refs": [
+    "ADMITTEDCODE_GITHUB_MIRROR_HANDOFF.md",
+    "data/site-admission-watch.json"
+  ],
+  "observed_at": "2026-08-31T07:44:00-05:00",
+  "exact_metrics": {
+    "symbol_order": "LRUIVGOCMTBEAP",
+    "lifecycle": "BLOCKED",
+    "archive_ready": false,
+    "unassigned_work": 0,
+    "chat_owned_implementation": 0,
+    "chat_owned_validation": 0,
+    "chat_owned_integration": 0,
+    "chat_owned_observation": 0,
+    "chat_owned_credentials": 0,
+    "canonical_owner_installed": true,
+    "thread_required": false,
+    "blocker_count": 1,
+    "evidence_complete": false,
+    "activated": false,
+    "propagated": false
+  },
+  "metric_evidence": {
+    "lifecycle": "data/site-admission-watch.json status=BLOCKED",
+    "archive_ready": "Site admission release condition not met",
+    "unassigned_work": "AdmittedCode/.github owns the watch task",
+    "chat_owned_counts": "no chat-owned Site mutation or credential authority",
+    "canonical_owner_installed": "site-admission watch record is installed",
+    "thread_required": "repository handoff and watch state are sufficient",
+    "blocker_count": "one compound Site machine-admission condition",
+    "evidence_complete": "release condition is not observed",
+    "activated": "watch state has activation_effect=NONE",
+    "propagated": "no Site integration propagation observed"
+  },
+  "authority_effect": "NONE"
+}
