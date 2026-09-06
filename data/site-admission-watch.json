@@ -15,11 +15,11 @@
     "external_session_ownership_allowed": false,
     "external_tasks_allowed": false,
     "site_active_sequence_state": "OBSERVED_BLOCKED",
-    "site_heartbeat_blob_sha": "b98deb4df19ed0a5194bf18c58a11875feb0c886",
+    "site_heartbeat_blob_sha": "a354e62cfddea9e129b01d6a42d57252dadbe880",
     "site_heartbeat_path": "data/ecosystem-heartbeat-state.json",
-    "site_orchestration_blob_sha": "c91fb04a9bcb3f498f6ccf9369065694bac3f520",
+    "site_orchestration_blob_sha": "2042a0b4ff0641a7e48f8d354c913f767116f8ac",
     "site_orchestration_path": "data/site-orchestration-state.json",
-    "site_work_state": "RUNNING"
+    "site_work_state": "BLOCKED"
   },
   "status": "BLOCKED",
   "target_repository": "StegVerse-Labs/Site",
