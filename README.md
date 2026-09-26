@@ -1,0 +1,3 @@
+# AdmittedCode organization coordination
+
+This repository owns organization coordination and its existing authoritative handoffs. See `ADMITTEDCODE_MIRROR_HANDOFF.md` for review and Site-admission boundaries and `ORG_BOUNDARY_MIRROR_HANDOFF.md` for the organization boundary. The source-only [2026-09-25 open-source inventory](docs/OPEN_SOURCE_ORGANIZATION_INVENTORY_20260925.json) documents six public repository entries and root license observations under existing central goal `ECOSYSTEM-OPEN-SOURCE-STRATEGY-001` (COSV `20010010100000`). Four roots have MIT text; two checked root paths returned 404. Rights holders and third-party grants remain unverified; the inventory is not a new grant or release authorization.
