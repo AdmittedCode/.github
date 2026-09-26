@@ -1,0 +1,75 @@
+{
+  "schema": "stegverse.organization-open-source-inventory/v1",
+  "organization": "AdmittedCode",
+  "snapshot_date": "2026-09-25",
+  "canonical_goal": "ECOSYSTEM-OPEN-SOURCE-STRATEGY-001",
+  "canonical_cosv": "20010010100000",
+  "scope": "Six public repositories returned by authenticated organization-scoped GitHub discovery, verified by root LICENSE reads. Metadata/root-only; neither legal title nor exhaustive file-level license provenance.",
+  "counts": {
+    "repositories": 6,
+    "public": 6,
+    "private": 0,
+    "internal": 0,
+    "root_mit_license_found": 4,
+    "root_license_not_found": 2,
+    "file_level_rights_verified": 0,
+    "copyright_title_verified": 0,
+    "release_authorizations": 0
+  },
+  "repositories": [
+    {
+      "repository": "AdmittedCode/code-admit-gate",
+      "visibility": "public",
+      "root_license": "MIT_TEXT_OBSERVED",
+      "root_license_blob_sha": "72885059f44631db227770b45f992a9aeac2e10a",
+      "root_license_notice": "Copyright (c) 2026 AdmittedCode contributors"
+    },
+    {
+      "repository": "AdmittedCode/coherency-scanner",
+      "visibility": "public",
+      "root_license": "MIT_TEXT_OBSERVED",
+      "root_license_blob_sha": "72885059f44631db227770b45f992a9aeac2e10a",
+      "root_license_notice": "Copyright (c) 2026 AdmittedCode contributors"
+    },
+    {
+      "repository": "AdmittedCode/admissibility-receipt",
+      "visibility": "public",
+      "root_license": "MIT_TEXT_OBSERVED",
+      "root_license_blob_sha": "72885059f44631db227770b45f992a9aeac2e10a",
+      "root_license_notice": "Copyright (c) 2026 AdmittedCode contributors"
+    },
+    {
+      "repository": "AdmittedCode/provider-harness",
+      "visibility": "public",
+      "root_license": "MIT_TEXT_OBSERVED",
+      "root_license_blob_sha": "72885059f44631db227770b45f992a9aeac2e10a",
+      "root_license_notice": "Copyright (c) 2026 AdmittedCode contributors"
+    },
+    {
+      "repository": "AdmittedCode/fleet-status",
+      "visibility": "public",
+      "root_license": "NOT_FOUND_AT_CHECKED_ROOT_PATH",
+      "root_license_blob_sha": null,
+      "root_license_notice": null
+    },
+    {
+      "repository": "AdmittedCode/.github",
+      "visibility": "public",
+      "root_license": "NOT_FOUND_AT_CHECKED_ROOT_PATH",
+      "root_license_blob_sha": null,
+      "root_license_notice": null
+    }
+  ],
+  "dispositions": [
+    "SOURCE_LICENSE_SCOPE_PARTIAL_ROOT_ONLY",
+    "CONTRIBUTOR_RIGHTS_UNVERIFIED",
+    "THIRD_PARTY_SOURCE_RIGHTS_UNVERIFIED",
+    "RELEASE_NOT_AUTHORIZED"
+  ],
+  "notes": [
+    "Identical observed root MIT blob in four repositories is source text, not authorship proof or a fresh license grant.",
+    "Root path 404 for fleet-status and .github does not prove no historical, scoped or subdirectory terms.",
+    "Existing grants must be preserved; any new license or release requires source owner and actual rights holder authorization.",
+    "This owner document covers only AdmittedCode, and can be publicly aggregated in the central existing Goal Task ID."
+  ]
+}
