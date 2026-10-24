@@ -1,0 +1,45 @@
+{
+  "authority_effect": "NONE",
+  "evidence": {
+    "capability": "intr-destination",
+    "communication_id": "intr-path-v1:AdmittedCode->Data-Continuation",
+    "destination_address": "data-continuation.intr-destination",
+    "destination_organization": "Data-Continuation",
+    "disposition": "ALLOW",
+    "merge_transfer_organization_receipt_sha256": "sha256:6f27e06663d8b68439df0c0a21119b0b25092a2e2378f7c35845e3f13a592db0",
+    "message": {
+      "body": {
+        "path_id": "AdmittedCode->Data-Continuation:intr-destination",
+        "schema": "stegverse.org-intr-destination-diagnostic/v1",
+        "transfer_commit": "18746f943161cda33e02cab96aa84454400bb080"
+      },
+      "communication_id": "intr-path-v1:AdmittedCode->Data-Continuation",
+      "message_class": "ecosystem.communication"
+    },
+    "message_sha256": "sha256:c45fbf7bacd2d69429524dd859ab0c1856fcdabaed6df0928544f622a2441e4b",
+    "path_id": "AdmittedCode->Data-Continuation:intr-destination",
+    "payload_sha256": "sha256:40d7e1a9c28267b0d8116b7a8a660f8ed4fab3a01fb4a68f5d1e629ad5b73b68",
+    "repository": "AdmittedCode/.github",
+    "schema": "stegverse.intr-path-transfer-evidence/v1",
+    "source_organization": "AdmittedCode",
+    "transfer_commit": "18746f943161cda33e02cab96aa84454400bb080"
+  },
+  "hb_reference": {
+    "authority_effect": "NONE",
+    "derived_from_clock": false,
+    "epoch": 469411750,
+    "frequency_hz": 100,
+    "generation": 469411750,
+    "heartbeat_id": "HB:469411750",
+    "phase_offset_ns": 0,
+    "progression_dependency": "OSCILLATOR_ONLY"
+  },
+  "predecessor_state_sha256": "sha256:40d7e1a9c28267b0d8116b7a8a660f8ed4fab3a01fb4a68f5d1e629ad5b73b68",
+  "previous_receipt_sha256": "sha256:5b8c925e1d4fcaed484650db0302d700090cd7de9ee3cd98c1314f53f8136126",
+  "receipt_sha256": "sha256:78f3696adacc594c678dbca02fb90456528365e2004b7c8b08634e28ac59a9cc",
+  "repository": "AdmittedCode/.github",
+  "schema": "stegverse.repo-transition-receipt/v1",
+  "successor_state_sha256": "sha256:de9cf922da5443a62969b30834658f32585d1c19940b62d07d272de7062b6059",
+  "transition_class": "INTR_MESH_PATH_TRANSFER",
+  "transition_id": "INTR_MESH_PATH_TRANSFER:AdmittedCode->Data-Continuation:intr-destination@intr-path-v1:AdmittedCode->Data-Continuation"
+}
