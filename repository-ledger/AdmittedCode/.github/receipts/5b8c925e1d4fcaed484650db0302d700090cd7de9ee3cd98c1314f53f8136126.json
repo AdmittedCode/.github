@@ -1,0 +1,45 @@
+{
+  "authority_effect": "NONE",
+  "evidence": {
+    "capability": "intr-destination",
+    "communication_id": "intr-path-v1:AdmittedCode->Admissible-Existence",
+    "destination_address": "admissible-existence.intr-destination",
+    "destination_organization": "Admissible-Existence",
+    "disposition": "ALLOW",
+    "merge_transfer_organization_receipt_sha256": "sha256:6f27e06663d8b68439df0c0a21119b0b25092a2e2378f7c35845e3f13a592db0",
+    "message": {
+      "body": {
+        "path_id": "AdmittedCode->Admissible-Existence:intr-destination",
+        "schema": "stegverse.org-intr-destination-diagnostic/v1",
+        "transfer_commit": "18746f943161cda33e02cab96aa84454400bb080"
+      },
+      "communication_id": "intr-path-v1:AdmittedCode->Admissible-Existence",
+      "message_class": "ecosystem.communication"
+    },
+    "message_sha256": "sha256:0e79a1ff20fafeac8fb740db270546ddc323388e49ff8d6d98a4dde2063e0170",
+    "path_id": "AdmittedCode->Admissible-Existence:intr-destination",
+    "payload_sha256": "sha256:8a9fb3732cbb686c083c9535d71cfc00ce4fd34473493d5b62fccb9a13cefd86",
+    "repository": "AdmittedCode/.github",
+    "schema": "stegverse.intr-path-transfer-evidence/v1",
+    "source_organization": "AdmittedCode",
+    "transfer_commit": "18746f943161cda33e02cab96aa84454400bb080"
+  },
+  "hb_reference": {
+    "authority_effect": "NONE",
+    "derived_from_clock": false,
+    "epoch": 469411750,
+    "frequency_hz": 100,
+    "generation": 469411750,
+    "heartbeat_id": "HB:469411750",
+    "phase_offset_ns": 0,
+    "progression_dependency": "OSCILLATOR_ONLY"
+  },
+  "predecessor_state_sha256": "sha256:8a9fb3732cbb686c083c9535d71cfc00ce4fd34473493d5b62fccb9a13cefd86",
+  "previous_receipt_sha256": "sha256:1f0a1a10bc426aba038705a8183c905dad4d83b749311ccf8a61705ac1091ca0",
+  "receipt_sha256": "sha256:5b8c925e1d4fcaed484650db0302d700090cd7de9ee3cd98c1314f53f8136126",
+  "repository": "AdmittedCode/.github",
+  "schema": "stegverse.repo-transition-receipt/v1",
+  "successor_state_sha256": "sha256:a81e0c2d6ca270f327c1536197dfdc1f2ee7e3b5096ccb1ae51f89ceb61e1a6c",
+  "transition_class": "INTR_MESH_PATH_TRANSFER",
+  "transition_id": "INTR_MESH_PATH_TRANSFER:AdmittedCode->Admissible-Existence:intr-destination@intr-path-v1:AdmittedCode->Admissible-Existence"
+}
