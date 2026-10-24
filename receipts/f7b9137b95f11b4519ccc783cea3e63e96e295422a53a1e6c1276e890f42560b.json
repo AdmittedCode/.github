@@ -1,0 +1,38 @@
+{
+  "authority_effect": "NONE",
+  "boundary_evidence": {
+    "communication_id": "intr-path-v1:AdmittedCode->StegVerse-Labs",
+    "destination_organization": "StegVerse-Labs",
+    "disposition": "ALLOW",
+    "operation": "INTR_MESH_PATH_TRANSFER",
+    "path_id": "AdmittedCode->StegVerse-Labs:intr-destination",
+    "profile_id": "intr-mesh-path-transfer",
+    "repository": "AdmittedCode/.github",
+    "transfer_commit": "18746f943161cda33e02cab96aa84454400bb080"
+  },
+  "canonical_state_transition_receipt_sha256": null,
+  "hb_reference": {
+    "authority_effect": "NONE",
+    "derived_from_clock": false,
+    "epoch": 469411750,
+    "frequency_hz": 100,
+    "generation": 469411750,
+    "heartbeat_id": "HB:469411750",
+    "phase_offset_ns": 0,
+    "progression_dependency": "OSCILLATOR_ONLY"
+  },
+  "org_transition_class": "REPO_STATE_PROPAGATION",
+  "organization": "AdmittedCode",
+  "predecessor_org_state_sha256": "sha256:cb29dbd00ea99d9aaa7908c73cba5a3646c51127f3f8f84aac1f51406afa868e",
+  "previous_receipt_sha256": "sha256:5d943eca1e0730c01b2a2c62585c8c273d93385b796c73c7d38b78e860cc6171",
+  "receipt_sha256": "sha256:f7b9137b95f11b4519ccc783cea3e63e96e295422a53a1e6c1276e890f42560b",
+  "repo_receipt_sha256": "sha256:24a2d0e4678dc342039536942cb5905941d464114672512294ca9ace09df08e9",
+  "repo_transition_id": "INTR_MESH_PATH_TRANSFER:AdmittedCode->StegVerse-Labs:intr-destination@intr-path-v1:AdmittedCode->StegVerse-Labs",
+  "schema": "stegverse.organization-transition-receipt/v1",
+  "source_receipt_schema": "stegverse.repo-transition-receipt/v1",
+  "source_repository": "AdmittedCode/.github",
+  "source_transition_id": "INTR_MESH_PATH_TRANSFER:AdmittedCode->StegVerse-Labs:intr-destination@intr-path-v1:AdmittedCode->StegVerse-Labs",
+  "source_transition_sha256": "sha256:24a2d0e4678dc342039536942cb5905941d464114672512294ca9ace09df08e9",
+  "subject_or_correlation_id": null,
+  "successor_org_state_sha256": "sha256:e908ee11081d35b47b3dc7b3cffcc99c36ef345c92b3a45b88ba8b0215d66fc5"
+}
