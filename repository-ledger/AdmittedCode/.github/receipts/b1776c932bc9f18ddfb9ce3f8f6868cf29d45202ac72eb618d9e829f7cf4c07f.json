@@ -1,0 +1,45 @@
+{
+  "authority_effect": "NONE",
+  "evidence": {
+    "capability": "intr-destination",
+    "communication_id": "intr-path-v1:AdmittedCode->SV-011",
+    "destination_address": "sv-011.intr-destination",
+    "destination_organization": "SV-011",
+    "disposition": "ALLOW",
+    "merge_transfer_organization_receipt_sha256": "sha256:6f27e06663d8b68439df0c0a21119b0b25092a2e2378f7c35845e3f13a592db0",
+    "message": {
+      "body": {
+        "path_id": "AdmittedCode->SV-011:intr-destination",
+        "schema": "stegverse.org-intr-destination-diagnostic/v1",
+        "transfer_commit": "18746f943161cda33e02cab96aa84454400bb080"
+      },
+      "communication_id": "intr-path-v1:AdmittedCode->SV-011",
+      "message_class": "ecosystem.communication"
+    },
+    "message_sha256": "sha256:8716a1608be9193d61de77f07961637cb6074b72b25fe464cd2464805cb550c7",
+    "path_id": "AdmittedCode->SV-011:intr-destination",
+    "payload_sha256": "sha256:66aff4f7582064f4936d3bf391f3fa94f1cef215e6a97e513c674c806c81c342",
+    "repository": "AdmittedCode/.github",
+    "schema": "stegverse.intr-path-transfer-evidence/v1",
+    "source_organization": "AdmittedCode",
+    "transfer_commit": "18746f943161cda33e02cab96aa84454400bb080"
+  },
+  "hb_reference": {
+    "authority_effect": "NONE",
+    "derived_from_clock": false,
+    "epoch": 469411750,
+    "frequency_hz": 100,
+    "generation": 469411750,
+    "heartbeat_id": "HB:469411750",
+    "phase_offset_ns": 0,
+    "progression_dependency": "OSCILLATOR_ONLY"
+  },
+  "predecessor_state_sha256": "sha256:66aff4f7582064f4936d3bf391f3fa94f1cef215e6a97e513c674c806c81c342",
+  "previous_receipt_sha256": "sha256:7dd06b355e384ed43fb12656a93971872a7a96c322cfd20a2832e339974c8e65",
+  "receipt_sha256": "sha256:b1776c932bc9f18ddfb9ce3f8f6868cf29d45202ac72eb618d9e829f7cf4c07f",
+  "repository": "AdmittedCode/.github",
+  "schema": "stegverse.repo-transition-receipt/v1",
+  "successor_state_sha256": "sha256:c1128947b8bd0f0951f39f033ac5a3f4424465cd004f75cda575ab99b1f727c2",
+  "transition_class": "INTR_MESH_PATH_TRANSFER",
+  "transition_id": "INTR_MESH_PATH_TRANSFER:AdmittedCode->SV-011:intr-destination@intr-path-v1:AdmittedCode->SV-011"
+}
