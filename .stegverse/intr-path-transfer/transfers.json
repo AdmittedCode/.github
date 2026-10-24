@@ -1,0 +1,55 @@
+{
+  "schema": "stegverse.intr-path-transfer-declaration/v1",
+  "source_repository": "AdmittedCode/.github",
+  "rule": "Each row declares one InTr transfer over a declared mesh path whose source is this organization. Landing a row on main is the transition: after that push's main-merge transfer is ledgered, .github/workflows/intr-path-transfer.yml appends the path's source receipt, linked to that main-merge transfer receipt. A row already ledgered is answered from the ledger. No dispatch.",
+  "transfers": [
+    {
+      "path_id": "AdmittedCode->AaCT-E:intr-destination",
+      "communication_id": "intr-path-v1:AdmittedCode->AaCT-E"
+    },
+    {
+      "path_id": "AdmittedCode->Admissible-Existence:intr-destination",
+      "communication_id": "intr-path-v1:AdmittedCode->Admissible-Existence"
+    },
+    {
+      "path_id": "AdmittedCode->Data-Continuation:intr-destination",
+      "communication_id": "intr-path-v1:AdmittedCode->Data-Continuation"
+    },
+    {
+      "path_id": "AdmittedCode->ECAT-ICAT-Formal:intr-destination",
+      "communication_id": "intr-path-v1:AdmittedCode->ECAT-ICAT-Formal"
+    },
+    {
+      "path_id": "AdmittedCode->GCAT-BCAT-Engine:intr-destination",
+      "communication_id": "intr-path-v1:AdmittedCode->GCAT-BCAT-Engine"
+    },
+    {
+      "path_id": "AdmittedCode->SV-011:intr-destination",
+      "communication_id": "intr-path-v1:AdmittedCode->SV-011"
+    },
+    {
+      "path_id": "AdmittedCode->SV-LLM:intr-destination",
+      "communication_id": "intr-path-v1:AdmittedCode->SV-LLM"
+    },
+    {
+      "path_id": "AdmittedCode->StegGhost:intr-destination",
+      "communication_id": "intr-path-v1:AdmittedCode->StegGhost"
+    },
+    {
+      "path_id": "AdmittedCode->StegVerse-002:intr-destination",
+      "communication_id": "intr-path-v1:AdmittedCode->StegVerse-002"
+    },
+    {
+      "path_id": "AdmittedCode->StegVerse-Labs:intr-destination",
+      "communication_id": "intr-path-v1:AdmittedCode->StegVerse-Labs"
+    },
+    {
+      "path_id": "AdmittedCode->StegVerse-org:intr-destination",
+      "communication_id": "intr-path-v1:AdmittedCode->StegVerse-org"
+    },
+    {
+      "path_id": "AdmittedCode->Triad-Test:intr-destination",
+      "communication_id": "intr-path-v1:AdmittedCode->Triad-Test"
+    }
+  ]
+}
