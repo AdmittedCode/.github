@@ -47,16 +47,12 @@
       "sha256": "sha256:c39aca6904a11a65668f6b14949316eeb3b413fe77dde9da6a01995445ac6e61"
     },
     {
-      "path": ".github/workflows/organization-ledger-transition.yml",
-      "sha256": "sha256:213ae2f18b33c4d8887dc412ba0380260f9db641f3772597d62db3cf3607a3fa"
-    },
-    {
       "path": ".github/workflows/intr-ingress-ledger-component-validation.yml",
-      "sha256": "sha256:e724e658667a622c3ce1b0f3b13a1671dcba830a33726767dc498d758aeaaa40"
+      "sha256": "sha256:60e52dc88a9aa9e16ae8df5b12af7d1cc97b25eef674f758f39492488c8f9b47"
     },
     {
       "path": "tests/test_intr_ingress_ledger_component.py",
-      "sha256": "sha256:58a64313a509770196c0083d097bc62ac8ca3999f1381ccbcf1370614b7d7cd4"
+      "sha256": "sha256:6f75867b745b4df202ae991cd953c7dc1521b4d49460941df177b9381df7c2d2"
     }
   ]
 }
