@@ -1,0 +1,38 @@
+{
+  "authority_effect": "NONE",
+  "boundary_evidence": {
+    "communication_id": "intr-path-v1:AdmittedCode->formalism-tests",
+    "destination_organization": "formalism-tests",
+    "disposition": "ALLOW",
+    "operation": "INTR_MESH_PATH_TRANSFER",
+    "path_id": "AdmittedCode->formalism-tests:intr-destination",
+    "profile_id": "intr-mesh-path-transfer",
+    "repository": "AdmittedCode/.github",
+    "transfer_commit": "66ef07f63d4727b8443b85211e467854c787bbb3"
+  },
+  "canonical_state_transition_receipt_sha256": null,
+  "hb_reference": {
+    "authority_effect": "NONE",
+    "derived_from_clock": false,
+    "epoch": 469411750,
+    "frequency_hz": 100,
+    "generation": 469411750,
+    "heartbeat_id": "HB:469411750",
+    "phase_offset_ns": 0,
+    "progression_dependency": "OSCILLATOR_ONLY"
+  },
+  "org_transition_class": "REPO_STATE_PROPAGATION",
+  "organization": "AdmittedCode",
+  "predecessor_org_state_sha256": "sha256:5fff745766bcfb554a78094043bed2907f1363bd2a4bef2eb58239decaddb062",
+  "previous_receipt_sha256": "sha256:92605606d873e60d5c3e0e41f1594c635ffb0d7cf5ba679575f115407ec045df",
+  "receipt_sha256": "sha256:c1876e8697f8f50f6facfcc940bb8da4341bc9a5ca15a5c895337500d6af2b24",
+  "repo_receipt_sha256": "sha256:52639267901e70c25ea45e8df273c1e01a62b9011566dfb51823981e1b9adc16",
+  "repo_transition_id": "INTR_MESH_PATH_TRANSFER:AdmittedCode->formalism-tests:intr-destination@intr-path-v1:AdmittedCode->formalism-tests",
+  "schema": "stegverse.organization-transition-receipt/v1",
+  "source_receipt_schema": "stegverse.repo-transition-receipt/v1",
+  "source_repository": "AdmittedCode/.github",
+  "source_transition_id": "INTR_MESH_PATH_TRANSFER:AdmittedCode->formalism-tests:intr-destination@intr-path-v1:AdmittedCode->formalism-tests",
+  "source_transition_sha256": "sha256:52639267901e70c25ea45e8df273c1e01a62b9011566dfb51823981e1b9adc16",
+  "subject_or_correlation_id": null,
+  "successor_org_state_sha256": "sha256:384cf04dd504d0f31183fb453f076507fe79eca648b0e2114b3ec118cfaf22a3"
+}
