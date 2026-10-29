@@ -1,0 +1,38 @@
+{
+  "authority_effect": "NONE",
+  "boundary_evidence": {
+    "communication_id": "intr-path-v1:Infrastructure-Continuity-Ventures->AdmittedCode",
+    "disposition": "ALLOW",
+    "operation": "ORGANIZATION_INTR_DESTINATION_INGRESS",
+    "path_id": "Infrastructure-Continuity-Ventures->AdmittedCode:intr-destination",
+    "profile_id": "intr-destination",
+    "source_organization_receipt_sha256": "sha256:8289598c9a8f7ef45154baef694a5b2f1d8517c7ad7f4db1ace7de320ea88923",
+    "source_repository": "Infrastructure-Continuity-Ventures/.github",
+    "source_repository_receipt_sha256": "sha256:b25cad16d2ef4a518f44b12e32c57a7e517f4a80e9cfe06379c75dbb15e0ce8c"
+  },
+  "canonical_state_transition_receipt_sha256": null,
+  "hb_reference": {
+    "authority_effect": "NONE",
+    "derived_from_clock": false,
+    "epoch": 469411750,
+    "frequency_hz": 100,
+    "generation": 469411750,
+    "heartbeat_id": "HB:469411750",
+    "phase_offset_ns": 0,
+    "progression_dependency": "OSCILLATOR_ONLY"
+  },
+  "org_transition_class": "REPO_STATE_PROPAGATION",
+  "organization": "AdmittedCode",
+  "predecessor_org_state_sha256": "sha256:7fc3b5c091e2480d119473ba736011798421c9a5e8dc596306e6a5044410ec6e",
+  "previous_receipt_sha256": "sha256:749bb348b99a0527ddbc53f397a04bb801de794bfe4bbd0cc3370076356d9a68",
+  "receipt_sha256": "sha256:8b415ca52693fda9eac34203ae2795d496bdf5820004630fa80b8d83afe7da55",
+  "repo_receipt_sha256": "sha256:635403debf6fbe929c302e9c35449a13ff0162fa40c53b0eb8429fee5c903dad",
+  "repo_transition_id": "INTR_MESH_PATH_INGRESS:Infrastructure-Continuity-Ventures->AdmittedCode:intr-destination@intr-path-v1:Infrastructure-Continuity-Ventures->AdmittedCode",
+  "schema": "stegverse.organization-transition-receipt/v1",
+  "source_receipt_schema": "stegverse.repo-transition-receipt/v1",
+  "source_repository": "AdmittedCode/.github",
+  "source_transition_id": "INTR_MESH_PATH_INGRESS:Infrastructure-Continuity-Ventures->AdmittedCode:intr-destination@intr-path-v1:Infrastructure-Continuity-Ventures->AdmittedCode",
+  "source_transition_sha256": "sha256:635403debf6fbe929c302e9c35449a13ff0162fa40c53b0eb8429fee5c903dad",
+  "subject_or_correlation_id": null,
+  "successor_org_state_sha256": "sha256:f501f793389f756fa833bd4e74d7c821dd1db37c0aa885aee874ec9621d02f1a"
+}
