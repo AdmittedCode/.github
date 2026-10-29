@@ -1,0 +1,45 @@
+{
+  "authority_effect": "NONE",
+  "evidence": {
+    "capability": "intr-destination",
+    "communication_id": "intr-path-v1:AdmittedCode->Infrastructure-Continuity-Ventures",
+    "destination_address": "infrastructure-continuity-ventures.intr-destination",
+    "destination_organization": "Infrastructure-Continuity-Ventures",
+    "disposition": "ALLOW",
+    "merge_transfer_organization_receipt_sha256": "sha256:866b9c07a8b43abf940735b3d4f87782276d214d9d89947a8835f0927a336f2e",
+    "message": {
+      "body": {
+        "path_id": "AdmittedCode->Infrastructure-Continuity-Ventures:intr-destination",
+        "schema": "stegverse.org-intr-destination-diagnostic/v1",
+        "transfer_commit": "66ef07f63d4727b8443b85211e467854c787bbb3"
+      },
+      "communication_id": "intr-path-v1:AdmittedCode->Infrastructure-Continuity-Ventures",
+      "message_class": "ecosystem.communication"
+    },
+    "message_sha256": "sha256:ab29d26ef5a7764f87fe8ac448f7d737741e0cb1ff50e163f8d2a7c7ce7508a8",
+    "path_id": "AdmittedCode->Infrastructure-Continuity-Ventures:intr-destination",
+    "payload_sha256": "sha256:06fe7da7e5466d7ddc6d35fa3a10393c1ed9d67bb688ab9ed746c3e479d78a9a",
+    "repository": "AdmittedCode/.github",
+    "schema": "stegverse.intr-path-transfer-evidence/v1",
+    "source_organization": "AdmittedCode",
+    "transfer_commit": "66ef07f63d4727b8443b85211e467854c787bbb3"
+  },
+  "hb_reference": {
+    "authority_effect": "NONE",
+    "derived_from_clock": false,
+    "epoch": 469411750,
+    "frequency_hz": 100,
+    "generation": 469411750,
+    "heartbeat_id": "HB:469411750",
+    "phase_offset_ns": 0,
+    "progression_dependency": "OSCILLATOR_ONLY"
+  },
+  "predecessor_state_sha256": "sha256:06fe7da7e5466d7ddc6d35fa3a10393c1ed9d67bb688ab9ed746c3e479d78a9a",
+  "previous_receipt_sha256": "sha256:90ab3a96167fd770cee37dfa4a23387e046093780630045aa2b87b46360ee68a",
+  "receipt_sha256": "sha256:898db2d0c04557f5f6a3cbdaa5dc58daddad6605951fd508e71b09dc85643906",
+  "repository": "AdmittedCode/.github",
+  "schema": "stegverse.repo-transition-receipt/v1",
+  "successor_state_sha256": "sha256:f339da0f16c0135ece3abf176223b2d5e2de006900b03c6ec264b14ec5e967e5",
+  "transition_class": "INTR_MESH_PATH_TRANSFER",
+  "transition_id": "INTR_MESH_PATH_TRANSFER:AdmittedCode->Infrastructure-Continuity-Ventures:intr-destination@intr-path-v1:AdmittedCode->Infrastructure-Continuity-Ventures"
+}
