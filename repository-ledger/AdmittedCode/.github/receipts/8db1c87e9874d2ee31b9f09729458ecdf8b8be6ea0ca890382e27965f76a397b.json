@@ -1,0 +1,45 @@
+{
+  "authority_effect": "NONE",
+  "evidence": {
+    "capability": "intr-destination",
+    "communication_id": "intr-path-v1:AdmittedCode->master-records",
+    "destination_address": "master-records.intr-destination",
+    "destination_organization": "master-records",
+    "disposition": "ALLOW",
+    "merge_transfer_organization_receipt_sha256": "sha256:866b9c07a8b43abf940735b3d4f87782276d214d9d89947a8835f0927a336f2e",
+    "message": {
+      "body": {
+        "path_id": "AdmittedCode->master-records:intr-destination",
+        "schema": "stegverse.org-intr-destination-diagnostic/v1",
+        "transfer_commit": "66ef07f63d4727b8443b85211e467854c787bbb3"
+      },
+      "communication_id": "intr-path-v1:AdmittedCode->master-records",
+      "message_class": "ecosystem.communication"
+    },
+    "message_sha256": "sha256:e0f2a05ab46872914938cc2d2cc2ea4076503c390ee4e78d6be09590759a5cb8",
+    "path_id": "AdmittedCode->master-records:intr-destination",
+    "payload_sha256": "sha256:ee95d0d3a9e43df0868bcedffbe27d333ae8305782a2c8bf230e6fb134a18be2",
+    "repository": "AdmittedCode/.github",
+    "schema": "stegverse.intr-path-transfer-evidence/v1",
+    "source_organization": "AdmittedCode",
+    "transfer_commit": "66ef07f63d4727b8443b85211e467854c787bbb3"
+  },
+  "hb_reference": {
+    "authority_effect": "NONE",
+    "derived_from_clock": false,
+    "epoch": 469411750,
+    "frequency_hz": 100,
+    "generation": 469411750,
+    "heartbeat_id": "HB:469411750",
+    "phase_offset_ns": 0,
+    "progression_dependency": "OSCILLATOR_ONLY"
+  },
+  "predecessor_state_sha256": "sha256:ee95d0d3a9e43df0868bcedffbe27d333ae8305782a2c8bf230e6fb134a18be2",
+  "previous_receipt_sha256": "sha256:52639267901e70c25ea45e8df273c1e01a62b9011566dfb51823981e1b9adc16",
+  "receipt_sha256": "sha256:8db1c87e9874d2ee31b9f09729458ecdf8b8be6ea0ca890382e27965f76a397b",
+  "repository": "AdmittedCode/.github",
+  "schema": "stegverse.repo-transition-receipt/v1",
+  "successor_state_sha256": "sha256:60be8e4ba992d550b878017286bbcb839dd355f8c583c0223a843f82ca87717c",
+  "transition_class": "INTR_MESH_PATH_TRANSFER",
+  "transition_id": "INTR_MESH_PATH_TRANSFER:AdmittedCode->master-records:intr-destination@intr-path-v1:AdmittedCode->master-records"
+}
